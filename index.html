@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">SURVEY FORM</h1>
+      <p id="description">
+        This form collects information on consumer food choices
+      </p>
+    </header>
+
+    <main class="main">
+      <form id="survey-form" action="">
+        <div class="name">
+          <label id="name-label" for="name">NAME</label>
+          <input type="text" id="name" required placeholder="Input your name" />
+        </div>
+
+        <div>
+          <label id="email-label" for="email">EMAIL</label>
+          <input
+            type="email"
+            id="email"
+            minlength="20"
+            maxlength="30"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <div>
+          <label id="number-label" for="number">AGE</label>
+          <input
+            type="number"
+            id="number"
+            pattern="[0-9]"
+            min="15"
+            max="100"
+            placeholder="Provide us with your age"
+          />
+        </div>
+
+        <div>
+          <label id="dropdown-label" for="dropdown">FOOD CHOICE</label>
+          <select name="food-choice" id="dropdown">
+            <option value="rice">Rice</option>
+            <option value="beans">Beans</option>
+          </select>
+        </div>
+
+        <div>
+          <p id="meat-choice">What is your meat choice?</p>
+          <input
+            type="radio"
+            id="chicken"
+            name="meat-choice"
+            value="chicken"
+          /><label for="chicken"> Chicken</label>
+          <br />
+          <input type="radio" id="beef" name="meat-choice" value="beef" />
+          <label for="beef">Beef</label>
+        </div>
+
+        <div>
+          <label for="drink" id="drink-choice"
+            >Select your preferred drinks</label
+          >
+
+          <input
+            type="checkbox"
+            id="Fruit-Juice"
+            name="drink-choices"
+            value="Fruit-Juice"
+          />Fruit Juice <br />
+
+          <input
+            type="checkbox"
+            id="Water"
+            name="drink-choices"
+            value="Water"
+          />Water <br />
+
+          <input
+            type="checkbox"
+            id="Soft drink"
+            name="drink-choices"
+            value="Soft drink"
+          />Soft drink <br />
+        </div>
+
+        <div>
+          <p>Any additional food preference?</p>
+          <textarea name="comment" id="add-comments" cols="30" rows="10">
+            Do you have additional preferences?</textarea
+          >
+        </div>
+
+        <div>
+          <button id="Submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(163, 96, 96);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-image: url(backg.webp);
+}
+
+#title,
+#description {
+  text-align: center;
+  color: white;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown,
+#meat-choice,
+#drink-choice {
+  display: block;
+}
+
+#survey-form {
+  background-color: rgb(57, 57, 63);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding-left: 100px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  width: 50%;
+  height: 1000px;
+  position: relative;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#add-comments,
+#drink-choice {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+input::placeholder {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+#Submit {
+  position: absolute;
+  background-color: blue;
+  bottom: 30px;
+  height: 40px;
+  width: 77%;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+textarea {
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 120px;
+  width: 632px;
+  resize: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
